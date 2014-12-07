@@ -5,8 +5,9 @@
 
 	.controller('mainController', ['$http', function($http) {
 		this.aboutHeading = 'Welcome to My Bakery.';
-		this.aboutProjects = 'Content Coming Soon';
-		this.aboutSkills = '';
+		this.aboutProjects = 'Checkout some items on the menu:';
+
+		this.projectLinks = ['imgular/', 'eslunch/'];
 	}]);
 
 })();
