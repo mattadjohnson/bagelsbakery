@@ -7,7 +7,8 @@
 		this.aboutHeading = 'Welcome to My Bakery.';
 		this.aboutProjects = 'Checkout some items on the menu:';
 
-		this.projectLinks = ['imgular/', 'eslunch/'];
+		this.imgularLink = 'imgular/';
+		this.esLunchLink = 'eslunch/';
 	}]);
 
 })();
