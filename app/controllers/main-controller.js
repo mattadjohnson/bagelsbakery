@@ -8,7 +8,6 @@
 		this.aboutProjects = 'Checkout some items on the menu:';
 
 		this.imgularLink = 'imgular/';
-		this.esLunchLink = 'eslunch/';
 	}]);
 
 })();
