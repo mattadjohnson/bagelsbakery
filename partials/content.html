@@ -1,0 +1,22 @@
+<div class="container">
+
+	<div class="subpage">
+
+		<div class="content-container">
+
+			<h2 class="welcome">{{contentCtrl.welcome}}</h2>
+
+			<ul class="project-list">
+				<li class="project-item" ng-repeat="project in contentCtrl.projects">
+					<a class="project-link" ng-href="https://bagelsbakery.com/{{project.path}}">{{project.title}}</a>
+					<span class="project-description">
+						{{project.description}}
+					</span>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>

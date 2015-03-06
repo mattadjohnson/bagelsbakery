@@ -1,0 +1,10 @@
+<md-sidenav class="md-sidenav-right sidenav" md-component-id="right">
+	<!-- <md-toolbar class="sidenav-header">
+		<h1 class="md-toolbar-tools"><span class="sidenav-logo">{{menuCtrl.logo}}</span></h1>
+	</md-toolbar> -->
+	<md-content class="md-padding sidenav-content">
+		<div class="menu-links" ng-repeat="nav in menuCtrl.navs | orderBy:'-key'">
+			<img ng-src="images/{{nav.icon}}_18dp.png"></img><a class="nav-links" ng-href="#/{{nav.link}}" ng-click="menuCtrl.closeMenu()">{{nav.value}} </a>
+		</div>
+	</md-content>
+</md-sidenav>
