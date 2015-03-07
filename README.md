@@ -1,2 +1,1 @@
-Warlords of Draenor Guild Site
-=============
+Personal Projects homepage
