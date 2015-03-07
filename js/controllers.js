@@ -14,7 +14,7 @@ angular.module('bagelsBakery')
 }])
 
 .controller('contentController', ['$http', function($http) {
-	this.welcome = 'Welcome to my Bakery, Check Out What\'s on the Menu:';
+	this.welcome = 'Welcome to my bakery. Please check out what\'s on the menu:';
 
 	this.projects = [
 		{
