@@ -1,29 +1,44 @@
-<md-content id="bakeryHeader">
-	<md-toolbar class="header-container">
+<div id="bakeryHeader">
+
+	<div class="overlay"></div>
+
+	<div class="header-container">
+
+		<h1 class="header-text">
+			<span>Bagel's Bakery</span>
+		</h1>
+
+	</div>
+
+</div>
+
+
+<div id="bakeryNav" ng-class="{sticky:stick}">
+	<md-toolbar class="nav-container">
     	<h2 class="md-toolbar-tools">
 
-        	<div class="header-left"> <!-- TODO: center text on mobile view -->
-        		<div class="header-logo">
-		        	<a ng-href="#/"> <!--<a ng-href="/#/">-->
-		        		<span>{{headerCtrl.logo}}</span>
+        	<div class="nav-left"> <!-- TODO: center text on mobile view -->
+        		<div class="nav-logo">
+		        	<a ng-href="#/"> <!--<a ng-href="/#/">
+		        		<span>{{headerCtrl.logo}}</span>-->
 		        	</a>
 		        </div>
-		        <div class="header-server">
+		        <div class="nav-server">
 	        		<span><span class="break"> | </span>Project Site</span>
 	        	</div>
         	</div>
 
-        	<!-- <div class="header-center">
-        		<span class="header-recruiting">Recruiting: <span class="wow-class" ng-repeat="class in headerCtrl.recruiting" ng-if="class.hot" ng-style="{color: class.color}">{{class.value}}<span ng-if="!$last">, </span></span></span>
+        	<!-- <div class="nav-center">
+        		<span class="nav-recruiting">Recruiting: <span class="wow-class" ng-repeat="class in headerCtrl.recruiting" ng-if="class.hot" ng-style="{color: class.color}">{{class.value}}<span ng-if="!$last">, </span></span></span>
         	</div> -->
 
-        	<div class="header-right">
+        	<div class="nav-right">
 				<div class="right-nav" ng-repeat="nav in headerCtrl.navs | orderBy:'+key'">
 					<a class="nav-links" ng-href="#/{{nav.value}}">{{nav.value}} </a>
 				</div>
 				<div class="right-menu">
 					<span ng-click="headerCtrl.toggleMenu()">
-						<img class="header-menu-icon" src="images/ic_menu_white_18dp.png"/>
+						<img class="nav-menu-icon" src="images/ic_menu_white_18dp.png"/>
 					</span>
 				</div>
 			</div>
@@ -32,4 +47,4 @@
 
     </md-toolbar>
 
-</md-content>
+</div>

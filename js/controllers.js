@@ -31,12 +31,11 @@ angular.module('bagelsBakery')
 	];
 }])
 
-.controller('headerController', ['$http', '$mdSidenav', 'navigation', function($http, $mdSidenav, navigation) {
+.controller('headerController', ['$http', '$window', '$mdSidenav', 'navigation', function($http, $window, $mdSidenav, navigation) {
 	// handle all text on header
 	this.logo = 'Bagel\'s Bakery';
 
 	this.navs = navigation.headerNavs;
-
 
 	this.toggleMenu = function() {
 		$mdSidenav('right').toggle()
