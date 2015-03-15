@@ -19,6 +19,23 @@
 			controller: 'menuController',
 			controllerAs: 'menuCtrl'
 		};
-	});
+	})
+
+	.directive('scroll', function($window) {
+		return function(scope, element, attrs) {
+	        angular.element($window).bind('scroll', function() {
+	        	console.warn(this.pageYOffset);
+	             if (this.pageYOffset >= 288) {
+	                 scope.stick = true;
+	                 console.log('Scrolled below header.');
+	             } 
+	             else {
+	                 scope.stick = false;
+	                 console.log('Header is in view.');
+	             }
+	            scope.$apply();
+	        });
+	    };
+	})
 
 })();
