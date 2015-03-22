@@ -5,7 +5,7 @@ angular.module('bagelsBakery')
 
 .controller('aboutController', ['$http', function($http) {
 	// handle all text on about page
-	this.bio = ''
+	this.bio = 'My name is Matthew Johnson. I\'m a front-end developer at the University of Florida.';
 }])
 
 .controller('contactController', ['$http', function($http) {
