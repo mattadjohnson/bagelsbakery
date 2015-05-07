@@ -14,7 +14,7 @@ angular.module('bagelsBakery')
 }])
 
 .controller('contentController', ['$http', function($http) {
-	this.welcome = 'Welcome to my bakery. Please check out what\'s on the menu:';
+	this.welcome = 'Welcome to my code bakery. Please check out what\'s on the project menu:';
 
 	this.projects = [
 		{
@@ -28,7 +28,7 @@ angular.module('bagelsBakery')
 			image: '../images/wow.jpg',
 			path: 'moistcake',
 			title: '<Moist Cake> - WoW Guild',
-			description: 'This is my take on a World of Warcraft guild website. I was tired of all the crappy sites out there built from the same old templates, so I started this from scratch to serve as a public facing recruitment portal for my guild. Still totally a work in Progress.'
+			description: 'This is my take on a World of Warcraft guild website. I was tired of all the stock sites out there built from the same old templates, so I started this from scratch to serve as a public facing recruitment portal for my guild. Still totally a work in Progress.'
 		}
 	];
 }])

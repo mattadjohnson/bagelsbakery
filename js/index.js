@@ -1,8 +1,8 @@
 (function() {
 
-	var app = angular.module('bagelsBakery', ['ngRoute', 'ngMaterial']);
+	var app = angular.module('bagelsBakery', ['ngNewRouter', 'ngMaterial']);
 
-	app.config(function($routeProvider, $httpProvider) {
+	app.config(function($routeProvider, $httpProvider, $mdThemingProvider) {
 		$routeProvider.
 			when('/', {
 				templateUrl: 'partials/content.html',
@@ -22,6 +22,10 @@
 			otherwise({
 				redirectTo: '/'
 			});
+
+		$mdThemingProvider.theme('default')
+			    .primaryPalette('pink')
+			    .accentPalette('orange');
 	});
 
 })();
