@@ -1,7 +1,7 @@
 #bakeryHeader {
 	position: relative;
 	display: table;
-	height: 25rem;
+	height: 28rem;
 	width: 100%;
 	//background: transparent;
 	background: url("../../images/header.jpg");
@@ -26,13 +26,29 @@
 		z-index: 2;
 
 		.header-text {
-			margin: 0 auto;
+			width: 13rem;
 			padding: 3rem 0;
-			width: 85%;
-			color: #f4f4f4;
-			font-size: 42px;
+			margin: 0 auto;
+			opacity: 0.85;
+			color: #285797;
+			background-color: #ececec;
+			font-size: 7rem;
 			font-weight: 300;
-			font-family: cursive;
+			letter-spacing: -4px;
+			line-height: 1;
+		}
+
+		.header-tag {
+			margin: 0;
+			color: #f4f4f4;
+			font-size: 0.85rem;
+			font-weight: 300;
+
+			a {
+				text-decoration: none;
+				color: #e0812e;
+				font-weight: 600;
+			}
 		}
 	}
 }
@@ -50,14 +66,13 @@
 	width: 100%;
 	z-index: 100;
 	//background: transparent;
-	background-color: #f8f8f8;
+	background-color: #285797;
 	color: #ececec;
 
 	.nav-container {
 		height: 76px;
 		width: 100%;
 		padding: 0 12% 0 12%;
-		background-color: #f8f8f8;
 		color: #585e5e;
 
 		.nav-left {
@@ -66,12 +81,13 @@
 
 			.nav-server {
 				display: inline;
-				color: #121212;
+				color: #f4f4f4;
 				font-weight: 100;
 			}
 
 			.nav-logo {
 				display: inline;
+				color: #f4f4f4;
 			}
 		}
 
@@ -111,6 +127,7 @@
 @media (max-width: 820px) {
 	#bakeryNav {
 		.nav-container {
+			padding: 0;
 			.nav-left {
 				width: 49%;
 			}
@@ -128,8 +145,6 @@
 
 @media (max-width: 690px) {
 	#bakeryNav {
-		height: 64px;
-
 		.nav-container {
 			.nav-left {
 				width: 100%;
@@ -154,6 +169,11 @@
 						vertical-align: bottom;
 					}
 				}
+			}
+
+			h2 {
+				height: 76px;
+				max-height: 76px;
 			}
 		}
 	}

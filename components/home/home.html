@@ -1,1 +1,30 @@
-<h1>Hello {{home.name}}!</h1>
+<div class="container">
+
+	<div class="subpage">
+
+		<div class="content-container">
+
+			<h1 class="name">{{home.name}}</h2>
+
+			<h2 class="bio">{{home.bio}}</h2>
+
+			<!-- <ul class="project-list">
+				<li class="project-item">
+					<a class="project-link" target="_blank" ng-href="https://bagelsbakery.com/{{project.path}}" ng-repeat="project in home.projects">
+						<img ng-src="{{project.image}}" />
+						{{project.title}}
+					</a>
+					<span class="project-description">
+						{{project.description}}
+					</span>
+				</li>
+			</ul> -->
+
+		</div>
+
+	    <div class="project-brick" ng-repeat="brick in home.projects" ng-style="{'background-image':'url({{brick.src}})'}" ng-click="home.link(brick.path)">
+	    </div>
+
+	</div>
+
+</div>

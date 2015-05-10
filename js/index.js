@@ -1,7 +1,7 @@
 (function() {
 'use strict';
 
-angular.module('bagelsBakery', ['ngNewRouter', 'bagelsBakery.home'])
+angular.module('bagelsBakery', ['ngNewRouter', 'ngMaterial', 'bagelsBakery.home'])
 
 .controller('AppController', ['$router', function($router) {
 	$router.config([
