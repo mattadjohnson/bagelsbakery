@@ -4,7 +4,7 @@
 
 		<div class="content-container">
 
-			<h1 class="name">{{home.name}}</h2>
+			<h1 class="name">My name is Matthew Johnson</h1>
 
 			<h2 class="bio">{{home.bio}}</h2>
 
@@ -23,6 +23,8 @@
 		</div>
 
 	    <div class="project-brick" ng-repeat="brick in home.projects" ng-style="{'background-image':'url({{brick.src}})'}" ng-click="home.link(brick.path)">
+	    	<div class="overlay"></div>
+	    	<h1 class="image-title">{{brick.title}}</h1>
 	    </div>
 
 	</div>

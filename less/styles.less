@@ -1,5 +1,4 @@
 @import "header.less";
-@import "menu.less";
 @import "subpage.less";
 
 html, body {
@@ -10,9 +9,67 @@ html, body {
 
 	margin: 0;
 
-	background-color: #f4f4f4;
+	background-color: #ececec;
+
+	font-family: Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-.padding {
-	padding-top: 76px;
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.image-title {
+	width: 13rem;
+	padding: 3rem 0;
+	margin: 0 auto;
+	opacity: 0.85;
+	color: #285797;
+	background-color: #ececec;
+	font-size: 7rem;
+	font-weight: 300;
+	letter-spacing: -4px;
+	line-height: 1;
+}
+
+.image-tag {
+	margin: 0;
+	color: #f4f4f4;
+	font-size: 0.85rem;
+	font-weight: 300;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    bottom: 25px;
+    clear: both;
+    font-size: 3rem;
+    color: #585e5e;
+    background-color: #ececec;
+    text-align: center;
+    z-index: 14;
+
+    .reg-contact:after {
+        content: '\2022';
+        margin: 0 9px;
+    }
+}
+
+.small-bold {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: #e0812e;
+	font-weight: 600;
 }
