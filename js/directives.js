@@ -6,7 +6,9 @@
 	.directive('bakeryHeader', function() {
 		return {
 			restrict: 'E',
-			templateUrl: 'partials/directives/header.html'
+			templateUrl: 'partials/directives/header.html',
+			controller: 'headerController',
+			controllerAs: 'headerCtrl'
 		};
 	});
 

@@ -17,22 +17,13 @@
 
 
 <!-- <div id="bakeryNav">
+
 	<md-toolbar class="nav-container md-background">
+	
     	<h2 class="md-toolbar-tools">
 
-        	<div class="nav-left"> TODO: center text on mobile view 
-        		<div class="nav-logo">
-		        	<a ng-href="#/"> <a ng-href="/#/">
-		        		<span>{{headerCtrl.logo}}</span>
-		        	</a>
-		        </div>
-		        <div class="nav-server">
-	        		<span><span class="break"> | </span>'Bagel'</span>
-	        	</div>
-        	</div>
-
         	<div class="nav-right">
-				<div class="right-nav" ng-repeat="nav in headerCtrl.navs | orderBy:'+key'">
+				<div class="right-nav" ng-repeat="nav in headerCtrl.navs | orderBy:'+id'">
 					<a class="nav-links" ng-href="#/{{nav.value}}">{{nav.value}} </a>
 				</div>
 			</div>

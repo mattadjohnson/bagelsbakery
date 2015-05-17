@@ -1,3 +1,4 @@
+@import "variables.less";
 @import "header.less";
 @import "subpage.less";
 
@@ -9,7 +10,7 @@ html, body {
 
 	margin: 0;
 
-	background-color: #ececec;
+	background-color: @background-grey;
 
 	font-family: Roboto, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -30,8 +31,8 @@ html, body {
 	padding: 3rem 0;
 	margin: 0 auto;
 	opacity: 0.85;
-	color: #285797;
-	background-color: #ececec;
+	color: @blue;
+	background-color: @background-grey;
 	font-size: 7rem;
 	font-weight: 300;
 	letter-spacing: -4px;
@@ -52,8 +53,8 @@ html, body {
     bottom: 25px;
     clear: both;
     font-size: 3rem;
-    color: #585e5e;
-    background-color: #ececec;
+    color: @font-grey;
+    background-color: @background-grey;
     text-align: center;
     z-index: 14;
 
@@ -61,15 +62,21 @@ html, body {
         content: '\2022';
         margin: 0 9px;
     }
-}
 
-.small-bold {
-    font-size: 12px;
-    font-weight: 300;
+    .small-bold {
+	    font-size: 12px;
+	    font-weight: 300;
+	}
+
+	.inspire {
+		display: block;
+		font-size: 11px;
+		font-weight: 300;
+	}
 }
 
 a {
 	text-decoration: none;
-	color: #e0812e;
+	color: @orange;
 	font-weight: 600;
 }
