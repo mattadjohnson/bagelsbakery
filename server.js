@@ -1,6 +1,7 @@
 var express = require('express');
 var https = require('https');
 var http = require('http');
+var fs = require('fs');
 
 var app = express();
 
@@ -10,8 +11,8 @@ var privateKey = '../server.key';
 var publicCert = '../cert.pem';
 
 var httpsOptions = {
-	key: privateKey,
-	cert: publicCert
+    key: fs.readFileSync(privateKey, 'utf8'),
+    cert: fs.readFileSync(publicCert, 'utf8')
 };
 
 app.use(express.static(__dirname + '/'));
@@ -23,9 +24,9 @@ app.use(function(err, req, res, next){
 });
 
 // http.createServer(app).listen(httpPort, function() {
-// 	console.log('Listening for HTTP requests on port %d', httpPort);
+//  console.log('Listening for HTTP requests on port %d', httpPort);
 // });
 
 https.createServer(httpsOptions, app).listen(httpsPort, function() {
-	console.log('Listening for HTTPS requests on port %d', httpsPort);
+    console.log('Listening for HTTPS requests on port %d', httpsPort);
 });
