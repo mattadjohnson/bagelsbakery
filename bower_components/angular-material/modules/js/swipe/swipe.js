@@ -2,10 +2,11 @@
  * Angular Material Design
  * https://github.com/angular/material
  * @license MIT
- * v0.9.0
+ * v1.0.5
  */
-(function () {
+(function( window, angular, undefined ){
 "use strict";
+
 /**
  * @ngdoc module
  * @name material.components.swipe
@@ -19,7 +20,7 @@
  * @restrict A
  *
  * @description
- * The md-swipe-left directives allows you to specify custom behavior when an element is swiped
+ * The md-swipe-left directive allows you to specify custom behavior when an element is swiped
  * left.
  *
  * @usage
@@ -35,7 +36,7 @@
  * @restrict A
  *
  * @description
- * The md-swipe-right directives allows you to specify custom behavior when an element is swiped
+ * The md-swipe-right directive allows you to specify custom behavior when an element is swiped
  * right.
  *
  * @usage
@@ -43,10 +44,44 @@
  * <div md-swipe-right="onSwipeRight()">Swipe me right!</div>
  * </hljs>
  */
+/**
+ * @ngdoc directive
+ * @module material.components.swipe
+ * @name mdSwipeUp
+ *
+ * @restrict A
+ *
+ * @description
+ * The md-swipe-up directive allows you to specify custom behavior when an element is swiped
+ * up.
+ *
+ * @usage
+ * <hljs lang="html">
+ * <div md-swipe-up="onSwipeUp()">Swipe me up!</div>
+ * </hljs>
+ */
+/**
+ * @ngdoc directive
+ * @module material.components.swipe
+ * @name mdSwipeDown
+ *
+ * @restrict A
+ *
+ * @description
+ * The md-swipe-down directive allows you to specify custom behavior when an element is swiped
+ * down.
+ *
+ * @usage
+ * <hljs lang="html">
+ * <div md-swipe-down="onSwipDown()">Swipe me down!</div>
+ * </hljs>
+ */
 
 angular.module('material.components.swipe', ['material.core'])
     .directive('mdSwipeLeft', getDirective('SwipeLeft'))
-    .directive('mdSwipeRight', getDirective('SwipeRight'));
+    .directive('mdSwipeRight', getDirective('SwipeRight'))
+    .directive('mdSwipeUp', getDirective('SwipeUp'))
+    .directive('mdSwipeDown', getDirective('SwipeDown'));
 
 function getDirective(name) {
   var directiveName = 'md' + name;
@@ -55,7 +90,7 @@ function getDirective(name) {
     DirectiveFactory.$inject = ["$parse"];
   return DirectiveFactory;
 
-  /* @ngInject */
+  /* ngInject */
   function DirectiveFactory($parse) {
       return { restrict: 'A', link: postLink };
       function postLink(scope, element, attr) {
@@ -69,4 +104,4 @@ function getDirective(name) {
 
 
 
-})();
+})(window, window.angular);

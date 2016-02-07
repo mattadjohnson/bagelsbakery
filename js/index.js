@@ -1,12 +1,21 @@
 (function() {
 'use strict';
 
-angular.module('bagelsBakery', ['ngNewRouter', 'ngMaterial', 'bagelsBakery.home'])
+angular
+    .module('bagelsBakery', [
+        'ngNewRouter',
+        'ngMaterial',
+        'bagelsBakery.home',
+        'bagelsBakery.header'
+    ])
+    .controller('AppController', AppController);
 
-.controller('AppController', ['$router', function($router) {
-	$router.config([
-		{path: '/', component: 'home'}
-	]);
-}]);
+AppController.$inject = ['$router'];
+
+function AppController($router) {
+    $router.config([
+        {path: '/', component: 'home'}
+    ]);
+}
 
 })();

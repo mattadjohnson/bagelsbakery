@@ -1,3 +1,5 @@
 .DS_STORE
 node_modules
-package.json
+bower_components
+js/everything.min.js
+js/partials.js

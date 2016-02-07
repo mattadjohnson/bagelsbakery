@@ -1,0 +1,23 @@
+{
+  "name": "moistcake",
+  "version": "0.0.0",
+  "description": "moistcake ============",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthewJohnson3154/moistcake.git"
+  },
+  "author": "Matthew A. Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewJohnson3154/moistcake/issues"
+  },
+  "homepage": "https://github.com/MatthewJohnson3154/moistcake",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-angular-templates": "^1.0.2",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
