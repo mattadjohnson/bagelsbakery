@@ -1,92 +1,93 @@
 .subpage {
-	margin: 15px;
-	text-align: center;
+    min-height: 250px;
+    margin: 15px;
+    text-align: center;
 
-	.stories-subpage {
-		text-align: center;
-	}
+    .content-container {
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        text-align: left;
+        font-size: 20px;
+        color: #585e5e;
 
-	.subpage-header {
-		font-size: 22px;
-	}
+        .name {
+            margin: 0 auto;
+            font-size: 1.45rem;
+            font-weight: 300;
+            text-align: center;
+        }
 
-	.subpage-info {
+        .bio {
+            maring: 0 auto;
+            font-size: 0.95rem;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
 
-	}
+    .project-brick {
+        position: relative;
+        display: inline-block;
+        height: 15rem;
+        width: 25rem;
+        margin: 10px;
+        background-position: center center;
+        background-size: cover;
+        cursor: pointer;
 
-	.subpage-img {
-		position: relative;
-		width: 98%;
-	}
+        .overlay {
+            z-index: 0;
+        }
 
-	.img-container {
-		width: 100%;
-		height: 175px;
-		margin: 0 0 10px 0;
-		text-align: center;
-		//overflow: hidden;
+        .image-title {
+            display: table-cell;
+            width: 13rem;
+            padding: 1rem;
+            vertical-align: middle;
+            font-size: 2.5rem;
+        }
+    }
+}
 
-		.img {
-			position: relative;
-			width: 100%;
-			/*left: 100%;*/
-			/*margin-left: -200%;*/
-		}
-	}
+@media (max-width: 910px) {
+    .subpage {
+        .project-brick {
+            width: 18rem;
+        }
+    }
+}
 
-	.content-container {
-		margin: 0 auto;
-		padding: 50px 0 0 0;
-		text-align: left;
-		font-size: 20px;
-		color: #585e5e;
+@media (max-width: 710px) {
+    .subpage {
+        .project-brick {
+            width: 15rem;
+        }
+    }
+}
 
-		.welcome {
-			margin: 0 auto;
-			font-size: 24px;
-			text-align: center;
-		}
-
-		.project-list {
-			margin: 40px;
-			text-decoration: none;
-			list-style: none;
-
-			.project-item {
-				width: 50%;
-				margin: 0 auto;
-
-				.project-link {
-					display: inline-block;
-					width: 47%;
-					margin: 0 auto;
-					font-size: 20px;
-					color: #232323;
-					text-align: center;
-
-					img {
-						height: 10rem;
-						padding: 10px;
-					}
-				}
-
-				.project-description {
-					display: block;
-					padding: 20px;
-					font-size: 18px;
-					text-decoration: none;
-				}
-			}
-		}
-	}
+@media (max-width: 610px) {
+    .subpage {
+        .project-brick {
+            width: 13rem;
+        }
+    }
 }
 
 @media (max-width: 510px) {
-	.subpage {
-		.content-container {
-			.project-list {
-				margin: 25px;
-			}
-		}
-	}
+    .subpage {
+        .content-container {
+            .project-list {
+                margin: 25px;
+            }
+        }
+
+        .project-brick {
+            height: 13rem;
+            width: 20rem;
+
+            .image-title {
+                width: 18rem;
+            }
+        }
+    }
 }

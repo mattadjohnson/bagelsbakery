@@ -1,40 +1,34 @@
 <!doctype html>
-<html>
-	<head>
+<html lang="en" ng-app="bagelsBakery">
+    <head>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <base href="/">
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+        <link rel="stylesheet" href="css/main.min.css" />
 
-		<link rel="stylesheet" href="css/main.min.css" />
-		<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    </head>
 
-	</head>
+    <body ng-controller="AppController as appCtrl">
 
-	<body ng-app="bagelsBakery" scroll>
+        <bakery-header></bakery-header>
 
-		<bakery-header></bakery-header>
+        <div ng-viewport></div>
 
-		<bakery-menu></bakery-menu>
+        <div id="footer" class="footer">
+            <span class="reg-contact small-bold"><a href="https://github.com/MatthewJohnson3154" target="_blank" ng-click="mainCtrl.trackRegistrar()">GitHub</a></span><span class="small-bold reg-contact"><a href="https://www.linkedin.com/in/mattadjohnson" target="_blank">LinkedIn</a></span><span class="small-bold"><a href="mailto:mattadjohnson@gmail.com" target="_top">Contact Me</a></span>
+        </div>
 
-		<div id="main" ng-class="{padding:stick}" ng-view></div>
+        <script src="js/everything.min.js"></script>
+        <!--<script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-new-router/dist/router.es5.js"></script>
+        <script src="/bower_components/angular-aria/angular-aria.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js"></script>
+        <script src="/bower_components/angular-material/angular-material.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./components/home/home.js"></script>
+        <script src="./components/header/header.js"></script>-->
 
-		<script src="/bower_components/angular/angular.min.js"></script>
-		<script src="/bower_components/angular-route/angular-route.min.js"></script>
-		<script src="/bower_components/angular-aria/angular-aria.js"></script>
-	    <script src="/bower_components/angular-animate/angular-animate.js"></script>
-	    <script src="/bower_components/hammerjs/hammer.js"></script>
-	    <script src="/bower_components/angular-material/angular-material.js"></script>
-	    <!--<script src="/moistcake/bower_components/angular/angular.min.js"></script>
-		<script src="/moistcake/bower_components/angular-route/angular-route.min.js"></script>
-		<script src="/moistcake/bower_components/angular-aria/angular-aria.js"></script>
-	    <script src="/moistcake/bower_components/angular-animate/angular-animate.js"></script>
-	    <script src="/moistcake/bower_components/hammerjs/hammer.js"></script>
-	    <script src="/moistcake/bower_components/angular-material/angular-material.js"></script>-->
-		<script src="js/index.js"></script>
-		<script src="js/controllers.js"></script>
-		<script src="js/directives.js"></script>
-		<script src="js/services.js"></script>
-		<script src="js/filters.js"></script>
-
-	</body>
+    </body>
 </html>

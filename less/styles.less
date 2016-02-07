@@ -1,5 +1,5 @@
+@import "variables.less";
 @import "header.less";
-@import "menu.less";
 @import "subpage.less";
 
 html, body {
@@ -9,28 +9,74 @@ html, body {
 	left: 0;
 
 	margin: 0;
-	// height: 100%;
 
-	//overflow: auto;
+	background-color: @background-grey;
 
-	background-color: #fcfcfc;
+	font-family: Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-#main {
+.overlay {
+	position: absolute;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
-
-	margin: 0;
 	width: 100%;
-	height: 500px;
-
-	overflow: auto;
-
-	background-color: #fcfcfc;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
 }
 
-.padding {
-	padding-top: 76px;
+.image-title {
+	width: 13rem;
+	padding: 3rem 0;
+	margin: 0 auto;
+	opacity: 0.85;
+	color: @blue;
+	background-color: @background-grey;
+	font-size: 7rem;
+	font-weight: 300;
+	letter-spacing: -4px;
+	line-height: 1;
+}
+
+.image-tag {
+	margin: 0;
+	color: #f4f4f4;
+	font-size: 0.85rem;
+	font-weight: 300;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    bottom: 25px;
+    clear: both;
+    font-size: 3rem;
+    color: @font-grey;
+    background-color: @background-grey;
+    text-align: center;
+    z-index: 14;
+
+    .reg-contact:after {
+        content: '\2022';
+        margin: 0 9px;
+    }
+
+    .small-bold {
+	    font-size: 12px;
+	    font-weight: 300;
+	}
+
+	.inspire {
+		display: block;
+		font-size: 11px;
+		font-weight: 300;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: @orange;
+	font-weight: 600;
 }
