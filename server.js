@@ -7,8 +7,8 @@ var app = express();
 
 //var httpPort = 10549;
 var httpsPort = 10337;
-var privateKey = '../server.key';
-var publicCert = '../cert.pem';
+var privateKey = '../letsencrypt/etc/live/bagelsbakery.com/privkey.pem';
+var publicCert = '../letsencrypt/etc/live/bagelsbakery.com/fullchain.pem';
 
 var httpsOptions = {
     key: fs.readFileSync(privateKey, 'utf8'),
