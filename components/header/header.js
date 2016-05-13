@@ -2,7 +2,7 @@
 'use strict';
 
 angular
-    .module('bagelsBakery.header', [])
+    .module('bagelsBakery')
     .controller('HeaderController', HeaderController)
     .directive('bakeryHeader', bakeryHeader);
 
@@ -12,21 +12,13 @@ bakeryHeader.$inject = [];
 function HeaderController() {
     var vm = this;
 
-    vm.navs = [
-        {
-            value: 'about',
-            id: '0'
-        },
-        {
-            value: 'contact',
-            id: '1'
-        }
-    ];
+    vm.fabOpen = false;
 }
 
 function bakeryHeader() {
     return {
         restrict: 'E',
+        replace: true,
         templateUrl: '/components/header/header.html',
         controller: 'HeaderController',
         controllerAs: 'headerCtrl'

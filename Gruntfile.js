@@ -1,5 +1,15 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+        express: {
+            options: {
+                port: 9000
+            },
+            dev: {
+                options: {
+                    script: 'server.js'
+                }
+            }
+        },
         gitpull: {
             bakery: {
                 options: {
@@ -19,7 +29,8 @@ module.exports = function(grunt) {
                 },
                 files: {
                     // target.css file: source.less file
-                    "css/main.min.css": "less/styles.less"                }
+                    "css/main.min.css": "less/styles.less"
+                }
             }
         },
         ngtemplates: {
@@ -55,7 +66,7 @@ module.exports = function(grunt) {
                 },
                 files: {'js/everything.min.js': [
                         'bower_components/angular/angular.js',
-                        'bower_components/angular-new-router/dist/router.es5.js',
+                        'bower_components/angular-route/angular-route.js',
                         'bower_components/angular-aria/angular-aria.js',
                         'bower_components/angular-animate/angular-animate.js',
                         'bower_components/angular-material/angular-material.js',
@@ -68,44 +79,43 @@ module.exports = function(grunt) {
         },
         watch: {
             styles: {
-                files: ['less/*.less'], // which files to watch
+                files: ['less/*.less', 'components/**/*.less'], // which files to watch
                 tasks: ['less:bakery'],
                 options: {
-                    nospawn: true
+                    livereload: false
                 }
             },
             js: {
                 files: ['js/index.js', 'components/**/*.js'],
                 tasks: ['uglify:bakery'],
                 options: {
-                    nospawn: true
+                    livereload: false
                 }
             },
             html: {
-                files: ['components/**/*.js'],
+                files: ['components/**/*.html'],
                 tasks: ['ngtemplates:bakery', 'uglify:bakery'],
                 options: {
-                    nospawn: true
+                    livereload: false
                 }
-            }
-        },
-        connect: {
-            server: {
+            },
+            build_files: {
+                files: ['js/everything.min.js', 'css/main.min.css'],
                 options: {
-                    port: 9001
+                    livereload: true
                 }
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-git');
+    grunt.loadNpmTasks('grunt-express-server');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-angular-templates');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['connect', 'watch']);
+    grunt.registerTask('default', ['express:dev', 'watch']);
 
     grunt.registerTask('pull_build', ['gitpull:bakery', 'less:bakery', 'ngtemplates:bakery', 'uglify:bakery']);
 

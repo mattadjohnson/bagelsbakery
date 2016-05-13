@@ -1,32 +1,17 @@
 var express = require('express');
-var https = require('https');
 var http = require('http');
-var fs = require('fs');
 
 var app = express();
 
-//var httpPort = 10549;
-var httpsPort = 10337;
-var privateKey = '../letsencrypt/etc/live/bagelsbakery.com/privkey.pem';
-var publicCert = '../letsencrypt/etc/live/bagelsbakery.com/fullchain.pem';
-
-var httpsOptions = {
-    key: fs.readFileSync(privateKey, 'utf8'),
-    cert: fs.readFileSync(publicCert, 'utf8')
-};
+var httpPort = 9000;
 
 app.use(express.static(__dirname + '/'));
-//app.use('/', express.static(__dirname + '/'));
 
 app.use(function(err, req, res, next){
     console.error(err.stack || err.message);
     res.send(500, 'Server Error! ' + err.message);
 });
 
-// http.createServer(app).listen(httpPort, function() {
-//  console.log('Listening for HTTP requests on port %d', httpPort);
-// });
-
-https.createServer(httpsOptions, app).listen(httpsPort, function() {
-    console.log('Listening for HTTPS requests on port %d', httpsPort);
+http.createServer(app).listen(httpPort, function() {
+    console.log('Listening for HTTP requests on port %d', httpPort);
 });

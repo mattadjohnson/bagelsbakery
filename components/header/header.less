@@ -1,0 +1,62 @@
+#bakeryHeader {
+	background-image: url('../images/header.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 50vh;
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: fade(@black, 30%);
+	}
+
+	.image-content {
+		position: relative;
+		width: 165px;
+		height: 165px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 155px;
+		z-index: 3;
+		letter-spacing: -1px;
+		font-size: 6em;
+		color: @blue;
+		background-color: fade(@white, 65%);
+	}
+
+	.image-sub-content {
+		position: relative;
+		width: 170px;
+		height: auto;
+		margin: 0 auto;
+		text-align: center;
+		z-index: 3;
+		letter-spacing: -1px;
+		font-size: 1.2em;
+		color: @white;
+	}
+
+
+	.md-fab {
+		background-color: fade(@blue, 97%);
+
+		md-icon {
+			color: @white;
+		}
+	}
+
+	.md-mini {
+		background-color:  fade(@blue, 87%);
+
+		md-icon {
+			width: 20px;
+			height: 20px;
+			font-size: 20px;
+		}
+	}
+}

@@ -1,11 +1,17 @@
 {
-  "name": "bagelsbakery",
-  "version": "0.1.0",
-  "homepage": "https://github.com/MatthewJohnson3154/bagelsbakery",
+  "name": "blue-leaf",
+  "description": "Physics-like animations for pretty particles",
+  "main": "",
+  "dependencies": {
+    "angular": "~1.5.5",
+    "angular-material": "~1.0.8",
+    "angular-route": "~1.5.5"
+  },
+  "moduleType": "",
+  "keywords": [],
   "authors": [
-    "Matthew A. Johnson <mjohnson3154@gmail.com>"
+    "Matthew A. Johnson"
   ],
-  "description": "home project site",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -14,17 +20,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "angular": "~1.4"
-  },
-  "resolutions": {
-    "angular": "~1.4",
-    "angular-material": "master"
-  },
-  "devDependencies": {
-    "angular-material": "~1.0.0",
-    "angular-new-router": "~0.5.3",
-    "angular-animate": "~1.4.0",
-    "angular-aria": "~1.4.0"
-  }
+  "private": true
 }

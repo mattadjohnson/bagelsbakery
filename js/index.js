@@ -3,19 +3,35 @@
 
 angular
     .module('bagelsBakery', [
-        'ngNewRouter',
+        'ngAnimate',
         'ngMaterial',
-        'bagelsBakery.home',
-        'bagelsBakery.header'
+        'ngRoute'
     ])
-    .controller('AppController', AppController);
+    .config(config);
 
-AppController.$inject = ['$router'];
+config.$inject = ['$routeProvider'];
 
-function AppController($router) {
-    $router.config([
-        {path: '/', component: 'home'}
-    ]);
+function config($routeProvider) {
+    $routeProvider
+        .when('/', {
+            templateUrl: 'components/home/home.html',
+            controller: 'HomeController',
+            controllerAs: 'homeCtrl'
+        })
+        .when('/about', {
+            templateUrl: 'components/about/about.html',
+            controller: 'AboutController',
+            controllerAs: 'aboutCtrl'
+        })
+        .when('/contact', {
+            templateUrl: 'components/contact/contact.html',
+            controller: 'ContactController',
+            controllerAs: 'contactCtrl'
+        })
+        .otherwise({
+            redirectTo: '/'
+        })
+    ;
 }
 
 })();

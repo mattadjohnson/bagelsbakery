@@ -1,35 +1,33 @@
-<div id="bakeryHeader">
-
+<div id="bakeryHeader" ng-cloak>
     <div class="overlay"></div>
 
-    <div class="header-container">
+    <md-fab-speed-dial md-open="header.fabOpen" md-direction="right">
+        <md-fab-trigger>
+            <md-button aria-label="menu" class="md-fab">
+                <md-icon class="menu-icon">menu</md-icon>
+            </md-button>
+        </md-fab-trigger>
+        <md-fab-actions>
+            <md-button ng-href="https://github.com/MatthewJohnson3154" aria-label="GitHub" class="md-fab md-raised md-mini">
+                <md-tooltip md-direction="bottom">GitHub</md-tooltip>
+                <md-icon aria-label="GitHub">code</md-icon>
+            </md-button>
+            <md-button ng-href="https://www.linkedin.com/in/mattadjohnson" aria-label="LinkedIn" class="md-fab md-raised md-mini">
+                <md-tooltip md-direction="bottom">LinkedIn</md-tooltip>
+                <md-icon aria-label="LinkedIn">face</md-icon>
+            </md-button>
+            <md-button ng-href="mailto:mattadjohnson@gmail.com" aria-label="Email" class="md-fab md-raised md-mini">
+                <md-tooltip md-direction="bottom">Email</md-tooltip>
+                <md-icon aria-label="Email">email</md-icon>
+            </md-button>
+        </md-fab-actions>
+    </md-fab-speed-dial>
 
-        <h1 class="image-title">
-            MJ
-        </h1>
-        <h2 class="image-tag">
-            FRONT END DEVELOPER AT <a href="http://www.ufl.edu" target="_blank">UF</a>
-        </h2>
-
+    <div class="image-content">
+        <span class="name">MJ</span>
     </div>
 
+    <div class="image-sub-content">
+        <span class="desc">Front End Developer</span>
+    </div>
 </div>
-
-
-<!-- <div id="bakeryNav">
-
-    <md-toolbar class="nav-container md-background">
-    
-        <h2 class="md-toolbar-tools">
-
-            <div class="nav-right">
-                <div class="right-nav" ng-repeat="nav in headerCtrl.navs | orderBy:'+id'">
-                    <a class="nav-links" ng-href="#/{{nav.value}}">{{nav.value}} </a>
-                </div>
-            </div>
-
-        </h2>
-
-    </md-toolbar>
-
-</div> -->

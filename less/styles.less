@@ -1,82 +1,20 @@
+@import (inline) "../bower_components/angular-material/angular-material.min.css"; // Angular Material CSS
 @import "variables.less";
-@import "header.less";
-@import "subpage.less";
+@import "../components/header/header.less";
+@import "../components/home/home.less";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 html, body {
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-
-	margin: 0;
-
-	background-color: @background-grey;
-
-	font-family: Roboto, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
 	height: 100%;
-	z-index: 1;
-	background-color: rgba(0,0,0,0.5);
-}
 
-.image-title {
-	width: 13rem;
-	padding: 3rem 0;
-	margin: 0 auto;
-	opacity: 0.85;
-	color: @blue;
-	background-color: @background-grey;
-	font-size: 7rem;
-	font-weight: 300;
-	letter-spacing: -4px;
-	line-height: 1;
-}
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
 
-.image-tag {
-	margin: 0;
-	color: #f4f4f4;
-	font-size: 0.85rem;
-	font-weight: 300;
-}
-
-#footer {
-    position: relative;
-    width: 100%;
-    height: 70px;
-    bottom: 25px;
-    clear: both;
-    font-size: 3rem;
-    color: @font-grey;
     background-color: @background-grey;
-    text-align: center;
-    z-index: 14;
 
-    .reg-contact:after {
-        content: '\2022';
-        margin: 0 9px;
-    }
-
-    .small-bold {
-	    font-size: 12px;
-	    font-weight: 300;
-	}
-
-	.inspire {
-		display: block;
-		font-size: 11px;
-		font-weight: 300;
-	}
+    overflow-y: auto;
 }
 
-a {
-	text-decoration: none;
-	color: @orange;
-	font-weight: 600;
+#main {
+	min-height: 100%;
 }

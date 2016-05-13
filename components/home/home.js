@@ -2,7 +2,7 @@
 'use strict';
 
 angular
-    .module('bagelsBakery.home', [])
+    .module('bagelsBakery')
     .controller('HomeController', HomeController);
 
 HomeController.$inject = ['$sce'];

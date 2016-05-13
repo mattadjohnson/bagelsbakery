@@ -1,26 +1,30 @@
 {
-  "name": "moistcake",
-  "version": "0.0.0",
-  "description": "moistcake ============",
-  "main": "Gruntfile.js",
+  "name": "bagelsbakery",
+  "version": "1.0.0",
+  "description": "Personal Projects homepage",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MatthewJohnson3154/moistcake.git"
+    "url": "git+https://github.com/MatthewJohnson3154/bagelsbakery.git"
   },
   "author": "Matthew A. Johnson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MatthewJohnson3154/moistcake/issues"
+    "url": "https://github.com/MatthewJohnson3154/bagelsbakery/issues"
   },
-  "homepage": "https://github.com/MatthewJohnson3154/moistcake",
+  "homepage": "https://github.com/MatthewJohnson3154/bagelsbakery#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "grunt": "^0.4.5",
-    "grunt-angular-templates": "^1.0.2",
-    "grunt-contrib-connect": "^0.9.0",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-uglify": "^0.11.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-git": "^0.3.7"
+    "grunt": "^1.0.1",
+    "grunt-angular-templates": "^1.0.3",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3",
+    "grunt-git": "^1.0.0"
   }
 }

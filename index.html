@@ -1,24 +1,19 @@
 <!doctype html>
 <html lang="en" ng-app="bagelsBakery">
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
         <base href="/">
-        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <link rel="stylesheet" href="css/main.min.css" />
-
     </head>
 
-    <body ng-controller="AppController as appCtrl">
+    <body layout="column">
 
-        <bakery-header></bakery-header>
-
-        <div ng-viewport></div>
-
-        <div id="footer" class="footer">
-            <span class="reg-contact small-bold"><a href="https://github.com/MatthewJohnson3154" target="_blank" ng-click="mainCtrl.trackRegistrar()">GitHub</a></span><span class="small-bold reg-contact"><a href="https://www.linkedin.com/in/mattadjohnson" target="_blank">LinkedIn</a></span><span class="small-bold"><a href="mailto:mattadjohnson@gmail.com" target="_top">Contact Me</a></span>
-        </div>
+        <md-content id="page" layout="column" flex>
+            <div id="main" layout="column" flex ng-view></div>
+        </md-content>
 
         <script src="js/everything.min.js"></script>
         <!--<script src="/bower_components/angular/angular.js"></script>
