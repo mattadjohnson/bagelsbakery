@@ -1,0 +1,92 @@
+#bakeryHeader {
+    width: 100%;
+	min-height: 75%;
+    background: url(../images/bakery-hero-image.jpg) no-repeat center center;
+    background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+
+    .bakery-header-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75%;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.55);
+
+        .bakery-header-logo {
+            width: 194px;
+            height: 174px;
+            border-radius: 4px;
+            background-color: rgba($bakery-white, 0.42);
+
+            .logo-text {
+                color: $bakery-blue;
+                font-size: 100px;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        .bakery-header-tagline {
+            .position {
+                color: $bakery-white;
+            }
+
+            .uf {
+                color: $bakery-orange;
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover {
+                    color: lighten($bakery-blue, 40%);
+                }
+            }
+        }
+    }
+
+    .bakery-header-toolbar {
+        position: fixed;
+        background: transparent;
+
+        .bakery-header-title {
+            display: none;
+        }
+
+        .icon-container {
+            margin: 12px 48px 0 0;
+
+            .md-icon-button {
+                margin-right: 0;
+                padding: 0;
+
+                md-icon {
+                    width: 32px;
+                    height: 32px;
+                    font-size: 32px;
+                    color: $bakery-white;
+                }
+            }
+        }
+    }
+}
+
+.scrolled-past-hero {
+    #bakeryHeader {
+        .bakery-header-toolbar {
+            background-color: rgba($bakery-blue, 0.9);
+
+            .bakery-header-title,
+            .md-icon-button md-icon {
+                color: $bakery-white;
+            }
+
+            .bakery-header-title {
+                display: block;
+            }
+        }
+    }
+}

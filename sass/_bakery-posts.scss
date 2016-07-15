@@ -1,0 +1,12 @@
+#bagelsBakery {
+    #bakeryContainer {
+        #bakeryPostContainer {
+            padding: 0;
+            background-color: $bakery-background-grey;
+
+            .bakery-post-card {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+}

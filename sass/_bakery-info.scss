@@ -1,0 +1,21 @@
+#bagelsBakery {
+    background-color: $bakery-background-grey;
+
+    #bakeryContainer {
+        background-color: $bakery-background-grey;
+
+        .profile-info-card {
+            margin: 0;
+
+            .headshot {
+                border-radius: 30%;
+                height: 100px;
+                width: 100px;
+            }
+
+            .donate-icon {
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
