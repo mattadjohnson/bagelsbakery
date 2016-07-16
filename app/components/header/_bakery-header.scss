@@ -57,10 +57,10 @@
         }
 
         .icon-container {
-            margin: 12px 48px 0 0;
+            margin: 12px 24px 0 0;
 
             .md-icon-button {
-                margin-right: 0;
+                margin: 0;
                 padding: 0;
 
                 md-icon {
@@ -86,6 +86,42 @@
 
             .bakery-header-title {
                 display: block;
+                margin-left: 24px;
+
+                .md-headline {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 959px) and (min-width: 0) {
+    .scrolled-past-hero {
+        #bakeryHeader {
+            .bakery-header-toolbar {
+                .md-toolbar-tools {
+                    padding: 0 5px;
+                }
+
+                .icon-container {
+                    margin: 18px 0 0 0;
+
+                    .md-icon-button {
+                        md-icon {
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                }
+
+                .bakery-header-title {
+                    margin: 0;
+
+                    .md-headline {
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }

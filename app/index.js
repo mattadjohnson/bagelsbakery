@@ -20,9 +20,7 @@ function config($routeProvider, $locationProvider) {
 
     $routeProvider
         .when('/', {
-            templateUrl: 'partials/bakery.html', // file name = name of app, hyphen separated words
-            controller: 'BakeryController', // controller ProudCamelCase and long (Controller)
-            controllerAs: 'bakeryCtrl' // controllerAs camelCase and short (Ctrl)
+            template: '<bakery-home></bakery-home>',
         })
         .otherwise({
             redirectTo: '/'

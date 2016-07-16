@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
 @import "bakery-variables";
-@import "bakery-header";
-@import "bakery-info";
-@import "bakery-posts";
+@import "../components/home/bakery-home";
+@import "../components/header/bakery-header";
+@import "../components/info/bakery-info";
+@import "../components/posts/bakery-posts";
 
 body {
     font-family: Roboto, Arial, sans-serif;
@@ -17,6 +18,10 @@ body {
     background-color: $bakery-background-grey;
     overflow: scroll;
     -webkit-overflow-scrolling: scroll;
+}
+
+.mj-hue {
+    color: darken($bakery-blue, 30%);
 }
 
 a {

@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+#bagelsBakery {
+  background-color: #E1E1E1; }
+  #bagelsBakery #bakeryContainer {
+    background-color: #E1E1E1; }
+
+@media (max-width: 959px) and (min-width: 0) {
+  #bagelsBakery #bakeryContainer {
+    padding: 0; } }
 #bakeryHeader {
   width: 100%;
   min-height: 75%;
@@ -41,9 +49,9 @@
     #bakeryHeader .bakery-header-toolbar .bakery-header-title {
       display: none; }
     #bakeryHeader .bakery-header-toolbar .icon-container {
-      margin: 12px 48px 0 0; }
+      margin: 12px 24px 0 0; }
       #bakeryHeader .bakery-header-toolbar .icon-container .md-icon-button {
-        margin-right: 0;
+        margin: 0;
         padding: 0; }
         #bakeryHeader .bakery-header-toolbar .icon-container .md-icon-button md-icon {
           width: 32px;
@@ -57,20 +65,31 @@
   .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .md-icon-button md-icon {
     color: #FFFFFF; }
   .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .bakery-header-title {
-    display: block; }
+    display: block;
+    margin-left: 24px; }
+    .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .bakery-header-title .md-headline {
+      font-size: 22px; }
 
-#bagelsBakery {
-  background-color: #E1E1E1; }
-  #bagelsBakery #bakeryContainer {
-    background-color: #E1E1E1; }
-    #bagelsBakery #bakeryContainer .profile-info-card {
-      margin: 0; }
-      #bagelsBakery #bakeryContainer .profile-info-card .headshot {
-        border-radius: 30%;
-        height: 100px;
-        width: 100px; }
-      #bagelsBakery #bakeryContainer .profile-info-card .donate-icon {
-        margin-bottom: 2px; }
+@media (max-width: 959px) and (min-width: 0) {
+  .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .md-toolbar-tools {
+    padding: 0 5px; }
+  .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .icon-container {
+    margin: 18px 0 0 0; }
+    .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .icon-container .md-icon-button md-icon {
+      width: 26px;
+      height: 26px; }
+  .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .bakery-header-title {
+    margin: 0; }
+    .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .bakery-header-title .md-headline {
+      font-size: 20px; } }
+#bagelsBakery #bakeryContainer .profile-info-card {
+  margin: 0; }
+  #bagelsBakery #bakeryContainer .profile-info-card .headshot {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  #bagelsBakery #bakeryContainer .profile-info-card .info-card-icon {
+    margin-bottom: 4px; }
 
 #bagelsBakery #bakeryContainer #bakeryPostContainer {
   padding: 0;
@@ -89,6 +108,9 @@ body {
   background-color: #E1E1E1;
   overflow: scroll;
   -webkit-overflow-scrolling: scroll; }
+
+.mj-hue {
+  color: #08111e; }
 
 a {
   color: #336ebf; }
