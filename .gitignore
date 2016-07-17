@@ -3,3 +3,4 @@
 .*.*.sw*
 projects/
 bower_components/
+node_modules/
