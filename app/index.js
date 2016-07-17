@@ -6,7 +6,8 @@ angular
         'ngRoute',
         'ngAnimate',
         'ngMaterial',
-        'ngtweet'
+        'ngtweet',
+        'hc.marked'
     ])
     .config(config)
     .run(run);

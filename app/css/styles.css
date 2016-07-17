@@ -95,7 +95,20 @@
   padding: 0;
   background-color: #E1E1E1; }
   #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card {
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    padding: 0 10px 10px 10px; }
+    #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card h1 {
+      margin: 15px 0;
+      font-weight: normal;
+      font-size: 24px; }
+    #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card h3 {
+      margin: 0 0 10px 0;
+      font-weight: normal;
+      font-size: 14px; }
+    #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card p:last-of-type {
+      margin-bottom: 0; }
+    #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card .md-button {
+      margin: 0; }
 
 body {
   font-family: Roboto, Arial, sans-serif;
@@ -108,9 +121,6 @@ body {
   background-color: #E1E1E1;
   overflow: scroll;
   -webkit-overflow-scrolling: scroll; }
-
-.mj-hue {
-  color: #08111e; }
 
 a {
   color: #336ebf; }

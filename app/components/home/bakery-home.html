@@ -3,12 +3,10 @@
 <section id="bagelsBakery" flex="none">
     <!-- core content block for Guild thoughts -->
     <md-content id="bakeryContainer" flex layout-padding ng-cloak>
-        <div layout="column" layout-fill layout-align="top">
+        <div id="bakeryPostContainer" layout-gt-sm="row" layout-sm="column" layout-padding layout-align="top">
             <!-- CONTENT HERE -->
-            <md-content id="bakeryPostContainer" flex layout-padding layout="row" layout-sm="column" layout-xs="column">
-                <bakery-info layout="column" layout-fill flex="25" flex-xs="100" flex-sm="100" layout-align="top"></bakery-info>
-                <bakery-posts layout="column" layout-fill flex-gt-sm="75" flex="100" layout-align="top"></bakery-posts>
-            </md-content>
+            <bakery-info layout="column" flex="25" flex-xs="100" flex-sm="100" layout-align="top"></bakery-info>
+            <bakery-posts layout="column" flex="100" flex-gt-sm="75" layout-align="top"></bakery-posts>
         </div>
     </md-content>
 </section>

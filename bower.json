@@ -1,0 +1,23 @@
+{
+  "name": "bagelsBakery",
+  "description": "Homepage of Matthew Johnson",
+  "main": [],
+  "dependencies": {
+    "angular-marked": "~1.2.2"
+  },
+  "devDependencies": {},
+  "moduleType": [],
+  "keywords": [],
+  "authors": [
+    "Matthew Johnson <mjohnson3154@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
