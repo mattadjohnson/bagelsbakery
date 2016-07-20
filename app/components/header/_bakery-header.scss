@@ -97,6 +97,14 @@
 }
 
 @media (max-width: 959px) and (min-width: 0) {
+    #bakeryHeader {
+        .bakery-header-toolbar {
+            .icon-container {
+                display: none;
+            }
+        }
+    }
+
     .scrolled-past-hero {
         #bakeryHeader {
             .bakery-header-toolbar {
@@ -105,6 +113,7 @@
                 }
 
                 .icon-container {
+                    display: block;
                     margin: 18px 0 0 0;
 
                     .md-icon-button {

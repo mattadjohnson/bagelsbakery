@@ -71,9 +71,13 @@
       font-size: 22px; }
 
 @media (max-width: 959px) and (min-width: 0) {
+  #bakeryHeader .bakery-header-toolbar .icon-container {
+    display: none; }
+
   .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .md-toolbar-tools {
     padding: 0 5px; }
   .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .icon-container {
+    display: block;
     margin: 18px 0 0 0; }
     .scrolled-past-hero #bakeryHeader .bakery-header-toolbar .icon-container .md-icon-button md-icon {
       width: 26px;
@@ -96,7 +100,7 @@
   background-color: #E1E1E1; }
   #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card {
     margin: 0 0 10px 0;
-    padding: 0 10px 10px 10px; }
+    padding: 0 10px 20px 10px; }
     #bagelsBakery #bakeryContainer #bakeryPostContainer .bakery-post-card h1 {
       margin: 15px 0;
       font-weight: normal;
