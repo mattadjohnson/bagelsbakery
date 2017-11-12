@@ -1,0 +1,33 @@
+<md-card class="profile-info-card">
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">Matthew Johnson</span>
+            <span class="md-subhead">Lead Front-end Developer</span>
+            <span class="md-subhead">University of Florida</span>
+            <span class="md-subhead"><a href="https://one.uf.edu" target="_blank">ONE.UF</a> Team</span>
+        </md-card-title-text>
+
+        <md-card-title-media>
+            <img src="app/images/mj.jpg" class="headshot md-whiteframe-4dp" alt="Matthew Johnson">
+        </md-card-title-media>
+    </md-card-title>
+
+    <md-card-actions layout="row" layout-align="start center">
+        <md-button class="md-primary" ng-click="$ctrl.displayTweets = !$ctrl.displayTweets" aria-label="Show / Hide Tweets" hide-gt-sm>
+            <md-icon class="info-card-icon" md-svg-src="app/images/icons/twitter.svg"></md-icon>
+            <span ng-if="$ctrl.displayTweets">Hide</span>
+            <span ng-if="!$ctrl.displayTweets">Show</span>
+        </md-button>
+
+        <md-button class="md-primary" href="https://paypal.me/mattadjohnson" target="_blank" aria-label="Donate">
+            <md-icon class="info-card-icon" md-svg-src="app/images/icons/gift.svg"></md-icon>
+            <span>Buy Me A Bagel</span>
+        </md-button>
+    </md-card-actions>
+</md-card>
+
+<br />
+
+<twitter-timeline class="md-whiteframe-2dp" ng-if="$ctrl.displayTweets">
+    <a class="twitter-timeline" href="https://twitter.com/mattadjohnson" data-tweet-limit="5">Tweets by mattadjohnson</a>
+</twitter-timeline>

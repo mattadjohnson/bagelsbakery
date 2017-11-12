@@ -1,0 +1,33 @@
+#bagelsBakery {
+    #bakeryContainer {
+        #bakeryPostContainer {
+            padding: 0;
+            background-color: $bakery-background-grey;
+
+            .bakery-post-card {
+                margin: 0 0 10px 0;
+                padding: 0 10px 20px 10px;
+
+                h1 {
+                    margin: 15px 0;
+                    font-weight: normal;
+                    font-size: 24px;
+                }
+
+                h3 {
+                    margin: 0 0 10px 0;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+
+                p:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .md-button {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

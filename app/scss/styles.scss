@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+@import "bakery-variables";
+@import "../components/home/bakery-home";
+@import "../components/header/bakery-header";
+@import "../components/info/bakery-info";
+@import "../components/posts/bakery-posts";
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#main {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $bakery-background-grey;
+    overflow: scroll;
+    -webkit-overflow-scrolling: scroll;
+}
+
+a {
+    color: lighten($bakery-blue, 10%);
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}

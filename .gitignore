@@ -1,5 +1,6 @@
+.sass-cache/
 .DS_STORE
-node_modules
-package.json
-bower.json
-Gruntfile.js
+.*.*.sw*
+projects/
+bower_components/
+node_modules/

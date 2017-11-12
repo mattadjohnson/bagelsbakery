@@ -1,31 +1,55 @@
-<!doctype html>
-<html ng-app="bagel">
-	<head>
+<!DOCTYPE html>
+<!-- update all metadata with appropriate application name/title -->
+<html id="test" lang="en" ng-app="bagelsBakery" base="/" ng-cloak>
+    <head>
+        <base href="/"/>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <meta name="description" content="Matthew A. Johnson - Personal Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<link rel="stylesheet" href="app/includes/css/main.min.css" />
-		<link rel="stylesheet" href="app/includes/css/bootstrap.min.css" />
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
 
-	</head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/app/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/app/images/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/app/images/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/app/images/favicon/manifest.json">
+        <link rel="mask-icon" href="/app/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/app/images/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/app/images/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#b09191">
 
-	<body>
+        <title>Matthew Johnson</title>
 
-		<bakery-header></bakery-header>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0-rc.5/angular-material.min.css">
+        <link rel="stylesheet" type="text/css" href="app/css/styles.css">
+    </head>
 
-		<div class="main" ng-view></div>
+    <body ng-cloak>
+        <!-- future for slideout menu or something -->
+        <!-- <bakery-menu></bakery-menu> -->
 
-		<script src="bower_components/angular/angular.min.js"></script>
-		<script src="bower_components/angular-route/angular-route.min.js"></script>
-		<script src="app/app.js"></script>
-		<!-- Controllers -->
-		<script src="app/controllers/main-controller.js"></script>
-		<script src="app/controllers/header-controller.js"></script>
+        <!-- ng-view main md-content -->
+        <md-content id="main" bakery-scroll flex ng-view></md-content>
+    </body>
 
-		<!-- Directives -->
-		<script src="app/directives/header-directive.js"></script>
-		<!-- <script src="app/filters/*.js"></script> -->
-
-	</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0-rc.5/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script type="text/javascript" src="node_modules/marked/marked.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-marked/dist/angular-marked.min.js"></script>
+    <script type="text/javascript" src="app/index.js"></script>
+    <script type="text/javascript" src="app/components/header/bakery-header.component.js"></script>
+    <script type="text/javascript" src="app/components/home/bakery-home.component.js"></script>
+    <script type="text/javascript" src="app/components/info/bakery-info.component.js"></script>
+    <script type="text/javascript" src="app/components/posts/bakery-posts.component.js"></script>
+    <script type="text/javascript" src="app/directives/bakery-dom-directives.js"></script>
+    <script type="text/javascript" src="app/lib/ngtweet.min.js"></script>
 </html>

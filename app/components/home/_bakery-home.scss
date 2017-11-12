@@ -1,0 +1,15 @@
+#bagelsBakery {
+    background-color: $bakery-background-grey;
+
+    #bakeryContainer {
+        background-color: $bakery-background-grey;
+    }
+}
+
+@media (max-width: 959px) and (min-width: 0) {
+    #bagelsBakery {
+        #bakeryContainer {
+            padding: 0;
+        }
+    }
+}
